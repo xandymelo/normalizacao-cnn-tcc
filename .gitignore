@@ -1,0 +1,24 @@
+# Ambiente Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Dados baixados e artefatos pesados (ver "O que é versionado" no README)
+data/
+*.pt
+*.pth
+*.ckpt
+
+# PDFs de artigos (direitos autorais); os planejamentos em docs/ são versionados
+revisao/**/*.pdf
+
+# Credenciais
+.env
+*.key
+
+# Sistema
+.DS_Store

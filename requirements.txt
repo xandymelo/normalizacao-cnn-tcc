@@ -1,0 +1,4 @@
+# Dependências atuais (testes do sorteio da ordem de execução).
+# As bibliotecas do experimento (torch, torchvision, scikit-learn, pandas, scipy, statsmodels,
+# matplotlib) entram com o código, com versões fixadas na tag v1.0.0-protocolo.
+pytest>=7

@@ -1,0 +1,10 @@
+etapa,registros
+"Encontrados no OpenAlex (string do recorte), sem filtros",7380
+"Encontrados no OpenAlex (string do recorte), periódicos 2015–2026",3400
+Baixados para triagem (OpenAlex),300
+Importados das bases CAPES,0
+Após remoção de duplicatas,299
+Excluídos por I1/E1 (não é artigo de periódico),0
+Excluídos por I3/E3 (sem indício empírico),121
+Incluídos,0
+Pendentes de verificação Qualis,178

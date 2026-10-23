@@ -1,0 +1,13 @@
+id,autores,ano,titulo,veiculo,tipo,identificador,papel
+S1,Ioffe; Szegedy,2015,Batch normalization: accelerating deep network training by reducing internal covariate shift,ICML (PMLR v. 37),anais,PMLR v37 ioffe15,Técnica comparada (BN)
+S2,Ba; Kiros; Hinton,2016,Layer normalization,arXiv,preprint,arXiv:1607.06450,Técnica comparada (LN)
+S3,Wu; He,2018,Group normalization,ECCV,anais,10.1007/978-3-030-01261-8_1,Técnica comparada (GN); efeito do lote
+S4,Singh; Krishnan,2020,Filter response normalization layer: eliminating batch dependence in the training of deep neural networks,CVPR,anais,10.1109/CVPR42600.2020.01125,Alternativa independente do lote
+S5,Brock et al.,2021,High-performance large-scale image recognition without normalization,ICML (PMLR v. 139),anais,PMLR v139 brock21a,Condição sem normalização
+A1,Mishkin; Sergievskiy; Matas,2017,Systematic evaluation of convolution neural network advances on the Imagenet,Computer Vision and Image Understanding,periódico,10.1016/j.cviu.2017.05.007,Avaliação sistemática; BN; ativação; lote
+A2,Ma; Klabjan,2024,Diminishing batch normalization,IEEE Transactions on Neural Networks and Learning Systems,periódico,10.1109/TNNLS.2022.3210840,Convergência; BN × LN
+A3,Wu et al.,2019,L1-norm batch normalization for efficient training of deep neural networks,IEEE Transactions on Neural Networks and Learning Systems,periódico,10.1109/TNNLS.2018.2876179,Custo computacional da BN
+A4,Kazimi; Sandfeld,2025,Enhancing semantic segmentation in high-resolution TEM images: a comparative study of batch normalization and instance normalization,Microscopy and Microanalysis,periódico,10.1093/mam/ozae093,Comparação direta com repetições
+A5,Fagbohungbe; Qian,2022,The effect of batch normalization on noise resistant property of deep learning models,IEEE Access,periódico,10.1109/ACCESS.2022.3206958,Com e sem BN; efeito colateral
+A6,Nguyen; Choi; Yang,2023,EUNNet: efficient un-normalized convolution layer for stable training of deep residual networks without batch normalization layer,IEEE Access,periódico,10.1109/ACCESS.2023.3244072,Treino estável sem normalização
+A7,Kathayat; Akurathi; Thalla,2025,Comparing the performance of convolutional neural networks with and without batch normalization,Global Journal of Engineering Innovations and Interdisciplinary Research,periódico,10.33425/3066-1226.1178,Desenho mais próximo do TCC

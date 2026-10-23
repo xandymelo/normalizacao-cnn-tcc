@@ -1,0 +1,44 @@
+# Configuração do experimento (Planejamento do Experimento, seções 5 e 6).
+# Alterações só são permitidas até a tag v1.0.0-protocolo.
+
+fatores:
+  normalizacao: [batch, layer, group, nenhuma]
+  tamanho_lote: [16, 128]
+
+sementes: [0, 1, 2, 3, 4]
+semente_piloto: 99
+semente_sorteio_ordem: 2026
+
+dados:
+  conjunto: fashion-mnist
+  fracao_validacao: 0.10          # estratificada, por semente
+  padronizacao: media_desvio_treino
+  aumento_de_dados: false
+
+modelo:
+  filtros: [32, 64, 128]          # um bloco convolucional 3x3 por valor
+  ativacao: relu
+  posicao_normalizacao: entre_convolucao_e_ativacao
+  dropout: 0.3
+  grupos_group_norm: 8
+  layer_norm: group_norm_1_grupo
+
+treinamento:
+  otimizador: adam
+  taxa_aprendizado: 0.001
+  betas: [0.9, 0.999]
+  perda: entropia_cruzada
+  max_epocas: 30
+  parada_antecipada:
+    monitorar: perda_validacao
+    paciencia: 5
+    restaurar_melhores_pesos: true
+
+metricas:
+  meta_acuracia_validacao: 0.90
+  equivalencia_pontos_percentuais: 1.0
+
+piloto:
+  meta_alternativa: 0.88          # se menos da metade dos cenários atingir 0,90
+  limite_horas_gpu: 12            # acima disso, max_epocas passa a 20
+  max_epocas_alternativo: 20
